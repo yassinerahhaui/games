@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block title %}{{game.title}}{% endblock title %}
+
+
+{% block content %}
+    {{game.content|safe}}
+{% endblock content %}
+{% block contact %}
+<form method="post">
+    {% csrf_token %}
+    <div class="container">
+        {% bootstrap_form form %}
+        <button type="submit">send</button>
+    </div>
+</form>
+{% endblock contact %}
+    

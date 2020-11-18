@@ -1,0 +1,178 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #2d3436;
+  overflow-x: hidden;
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.644);
+  text-align: center;
+  line-height: 45px;
+  position: fixed;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  margin: 2vmax;
+  text-decoration: none;
+  font-size: 2vmax;
+  font-size: 5vmin;
+}
+
+nav a:hover {
+  color: red;
+  text-shadow: 0 0 20px red, 0 0 20px red;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+
+.nav {
+  width: 100%;
+  height: 20vmin;
+  height: 40vmax;
+  background-image: url(../images/halloween.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: fixed;
+  background-repeat: no-repeat;
+}
+
+.nav h1 {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 8vw;
+  position: absolute;
+  top: 30%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 5;
+  text-shadow: 0 0 20px red, 0 0 20px red;
+}
+
+section {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+section .card {
+  position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
+  overflow: hidden;
+}
+
+section .card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+section .card img {
+  width: 100%;
+  height: 250px;
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+section .card img:hover {
+  -webkit-box-shadow: 0 0 10px red, 0 0 10px red;
+          box-shadow: 0 0 10px red, 0 0 10px red;
+}
+
+section .card h2 {
+  position: absolute;
+  left: 50px;
+  bottom: 10px;
+  background-color: rgba(245, 240, 234, 0.562);
+  padding: 5px 10px;
+  border-radius: 5px;
+  max-width: 200px;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  overflow: hidden;
+}
+
+footer .invalid-feedback {
+  color: white !important;
+}
+
+footer label {
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+}
+
+footer input, footer textarea {
+  width: 100%;
+  padding: 5px;
+  border: 2px solid blue;
+  border-radius: 5px;
+}
+
+footer button {
+  border: 2px solid blue;
+  color: white;
+  background-color: #0817f1;
+  border-radius: 3px;
+  padding: 5px 10px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer .icon {
+  text-align: center;
+}
+
+footer .icon i:hover {
+  text-shadow: 0 0 10px red, 0 0 10px red;
+}
+
+footer .icon a {
+  font-size: 3em;
+  color: white;
+  margin: 2vw;
+  display: inline-block;
+  -webkit-transition: 1s;
+  transition: 1s;
+  padding: 0;
+  cursor: pointer;
+}
+
+footer .icon a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+footer .contact {
+  text-align: center;
+  line-height: 50px;
+}
+
+footer .created {
+  text-align: center;
+  line-height: 100px;
+}
+/*# sourceMappingURL=style.css.map */

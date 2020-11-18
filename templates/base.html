@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'bootstrap/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'scss/style.css' %}">
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'all_games'%}">Home</a>
+        <a href="#game">Games</a>
+        <a href="#contact">Contact</a>
+        <a href="">About</a>
+    </nav>
+    <div class="navbar"></div>
+    <div class="nav">
+        <h1>website for games</h1>
+    </div>
+    <section id="game">
+        <div class="container-fluid">
+            <div class="row">
+                
+                {% block content %}  
+                {% endblock content %}
+                    
+                
+                
+            </div>
+        </div>
+    </section>
+    <footer id="contact">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row" style="color: white;">
+                    <div class="col-md-12 icon" style="height: 100px;">
+                        <a onclick="facebook()"><i class="fab fa-facebook-square"></i></a>
+                        <a onclick="instagram()"><i class="fab fa-instagram-square"></i></a>
+                        <a onclick="twitter()"><i class="fab fa-twitter-square"></i></a>
+                        <a onclick="snapchat()"><i class="fab fa-snapchat-square"></i></a>
+                    </div>
+                    <div class="col-md-6 created">
+                        <address><b>created_by:</b> yassine rahhaoui</address>
+                    </div>
+                    <div class="col-md-6 contact">
+                        <address><b>email:</b> yassinerahhaoui12@gmail.com</address>
+                        <address><b>phone:</b> 212630034545</address>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="height: 300px;">
+                
+                {% block contact %}
+                    
+                {% endblock contact %}
+                    
+                
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

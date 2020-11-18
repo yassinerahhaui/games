@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block title %}games{% endblock title %}
+
+{% block content %}
+
+{% for game in games %}
+    <div class="col-lg-3 col-md-4 col-sm-6 card">
+        <a href="{{game.id}}"><img src="{{ game.image.url }}" alt=""></a>
+        <h2>{{ game.header }}</h2>
+    </div>
+{% endfor %}
+    
+
+{% endblock content %}
+
+
+{% block contact %}
+<form method="post">
+    {% csrf_token %}
+    <div class="container">
+        {% bootstrap_form form %}
+        <button type="submit">send</button>
+    </div>
+</form>
+{% endblock contact %}
+    
